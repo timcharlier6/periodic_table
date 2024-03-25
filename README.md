@@ -7,5 +7,4 @@
 5. Create new db `psql -U postgres -c "CREATE DATABASE periodic_table;"`
 6. Populate new db `psql -U postgres -d periodic_table -f periodic_table.sql`
 7. Connect `psql --username=freecodecamp --dbname=periodic_table`
-
-
+8. Dump `pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql`
